@@ -1,11 +1,11 @@
 module.exports = {
-  extends: [
-    'ryansobol/es6',
-    'ryansobol/mocha',
-    'ryansobol/node'
-  ],
+  "extends": "airbnb-base",
   rules:
   {
-    'brace-style': ["error", "allman"]
-  }
+    'brace-style': ["error", "allman"],
+    "arrow-body-style": ["error", "always"]
+  },
+  "plugins": [
+    "import"
+  ]
 };

@@ -1,5 +1,9 @@
-'use strict';
-exports.up = function(knex)
+/*                                                                **
+** Created by: Paul Lederer                                       **
+** Date Created: 12/12/2016                                       **
+** Description: Knex migration file for creating the books table. **
+**                                                                */
+exports.up = function migration(knex)
 {
   return knex.schema.createTable('books', (table) =>
   {
@@ -13,7 +17,7 @@ exports.up = function(knex)
   });
 };
 
-exports.down = function(knex)
+exports.down = function regression(knex)
 {
   return knex.schema.dropTable('books');
 };

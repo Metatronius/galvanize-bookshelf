@@ -1,4 +1,3 @@
-'use strict';
 const data = require('../config/books.js');
 
 exports.seed = (knex, Promise) =>
@@ -9,7 +8,7 @@ exports.seed = (knex, Promise) =>
     {
       return Promise.all([
         // Inserts seed entries
-        knex('books').insert(data.books)
+        knex('books').insert(data.books),
       ]);
     });
 };
