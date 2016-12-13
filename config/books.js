@@ -1,3 +1,6 @@
+/*
+Used for seeding the books
+*/
 module.exports = {
   books: [{
     id: 1,

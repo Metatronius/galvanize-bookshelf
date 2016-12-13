@@ -1,6 +1,6 @@
 module.exports = {
   "extends": "airbnb-base",
-  rules:
+  rules://modified linter rules to stay sane
   {
     'brace-style': ["error", "allman"],
     "arrow-body-style": ["error", "always"]

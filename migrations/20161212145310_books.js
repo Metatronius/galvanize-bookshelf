@@ -3,7 +3,7 @@
 ** Date Created: 12/12/2016                                       **
 ** Description: Knex migration file for creating the books table. **
 **                                                                */
-exports.up = function migration(knex)
+exports.up = (knex) =>
 {
   return knex.schema.createTable('books', (table) =>
   {
@@ -17,7 +17,7 @@ exports.up = function migration(knex)
   });
 };
 
-exports.down = function regression(knex)
+exports.down = (knex) =>
 {
   return knex.schema.dropTable('books');
 };
